@@ -1,0 +1,59 @@
+/* a todo el cuerpo le doy un margen de 20px*/
+body{
+    margin: 20px;
+    font-family: verdana;
+}
+/* acá le doy padding a la navbar*/
+#menu-principal{
+    padding: 10px  0px; /* 1st position is top and bottom, the 2nd position is left and right*/
+    
+}
+
+#menu-principal a{
+    color:green;   /*color for link*/
+}
+
+/* creo una pseudoclase hover sobre los enlaces*/
+#menu-principal a:hover{
+    text-decoration: underline;
+}
+#menu-principal a + a::before{
+    content: " | ";
+    color:black;
+
+}
+footer{
+    margin-top: 20px;
+    border-top: solid 1px black;
+    padding-top: 10px;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+table, th, td{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+}
+/* Add style to color background cell*/
+tbody tr:nth-child(even){
+background-color: #CCC;
+}
+tbody tr:nth-child(odd){
+    background-color: #CCF; 
+     
+}
+tbody tr:nth-child(even):hover{
+    background-color: #DDD;
+    }
+    tbody tr:nth-child(odd):hover{
+        background-color: #DDD;  
+    }
+
+
+.sombra{
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6)
+}
